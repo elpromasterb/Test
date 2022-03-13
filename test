@@ -1,0 +1,28 @@
+--[[
+    Dragon Ball Z Final Stand Autofarm (Updated)
+    
+    Features:
+        Works In Every World,
+        Undetectable,
+        Overnight Afk,
+        Autoclicker...
+    
+    Made & Owned By Promasu (discord.gg/Promasu)
+    Pratham & Chris/Sys Are The Creators & Owner Of This Script.
+]]--
+
+_G.autofarm_configuration = {
+    enabled = false,
+    key_bind = "[",
+    auto_punch = true,
+    target_names = {
+        [1] = "Saiyan",
+        [2] = "Saiba",
+        [3] = "Kick",
+        [4] = "Chi",
+        [5] = "Majin"
+    }
+}
+if not game:IsLoaded() then game.Loaded:Wait() end
+local url = "https://raw.githubusercontent.com/PrathamWasTaken/Promasu/main/Autofarm.lua"
+loadstring(game:HttpGet(url))()
